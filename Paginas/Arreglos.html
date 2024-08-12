@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones de Arreglos</title>
+    <link rel="stylesheet" href="./CSS/arreglos.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Funciones de Arreglos</h1>
+
+        <div class="section" id="arrDisplay">
+            <h2>Arreglo Actual</h2>
+            <p id="currentArray"></p>
+        </div>
+
+        <div class="section" id="popFunction">
+            <h2>Pop</h2>
+            <button onclick="popElement()">Eliminar último elemento</button>
+        </div>
+
+        <div class="section" id="shiftFunction">
+            <h2>Shift</h2>
+            <button onclick="shiftElement()">Eliminar primer elemento</button>
+        </div>
+
+        <div class="section" id="pushFunction">
+            <h2>Push</h2>
+            <input type="text" id="pushValue" placeholder="Valor a agregar">
+            <button onclick="pushElement()">Agregar elemento</button>
+        </div>
+
+        <div class="section" id="unshiftFunction">
+            <h2>Unshift</h2>
+            <input type="text" id="unshiftValue" placeholder="Valor a agregar">
+            <button onclick="unshiftElement()">Agregar elemento al inicio</button>
+        </div>
+
+        <div class="section" id="spliceFunction">
+            <h2>Splice</h2>
+            <input type="number" id="spliceIndex" placeholder="Índice">
+            <input type="number" id="spliceDeleteCount" placeholder="Cantidad a eliminar">
+            <input type="text" id="spliceValue" placeholder="Valor a agregar (opcional)">
+            <button onclick="spliceElement()">Modificar arreglo</button>
+        </div>
+
+        <div class="section" id="deleteFunction">
+            <h2>Delete</h2>
+            <input type="number" id="deleteIndex" placeholder="Índice a eliminar">
+            <button onclick="deleteElement()">Eliminar elemento</button>
+        </div>
+
+        <div class="section" id="reverseFunction">
+            <h2>Reverse</h2>
+            <button onclick="reverseArray()">Invertir arreglo</button>
+        </div>
+
+        <div class="section" id="sortFunction">
+            <h2>Sort</h2>
+            <button onclick="sortArray()">Ordenar arreglo</button>
+        </div>
+
+        <div class="section" id="concatFunction">
+            <h2>Concat</h2>
+            <input type="text" id="concatArray" placeholder="Valores a concatenar (separados por comas)">
+            <button onclick="concatArray()">Concatenar arreglo</button>
+        </div>
+
+        <div class="section" id="joinFunction">
+            <h2>Join</h2>
+            <input type="text" id="joinSeparator" placeholder="Separador">
+            <button onclick="joinArray()">Unir arreglo</button>
+            <p id="joinedArray"></p>
+        </div>
+
+        <div class="section" id="lengthFunction">
+            <h2>Length</h2>
+            <p id="arrayLength"></p>
+        </div>
+    </div>
+
+    <script src="./JS/arreglos.js"></script>
+</body>
+
+</html>

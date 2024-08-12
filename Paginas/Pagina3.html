@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Interactiva</title>
+    <link rel="stylesheet" href="./CSS/stylepage3.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Calculadora Interactiva</h1>
+        <div class="section" id="sumaPositivos">
+            <h2>Suma de Números Positivos</h2>
+            <button id="startSum">Comenzar</button>
+            <p id="sumResult"></p>
+        </div>
+
+        <div class="section" id="ordenarNumeros">
+            <h2>Ordenar 3 Números</h2>
+            <input type="number" id="num1" placeholder="Número 1">
+            <input type="number" id="num2" placeholder="Número 2">
+            <input type="number" id="num3" placeholder="Número 3">
+            <button id="sortNumbers">Ordenar</button>
+            <p id="sortedResult"></p>
+        </div>
+
+        <div class="section" id="calcularImporte">
+            <h2>Calcular Importe Neto</h2>
+            <input type="number" id="importeBruto" placeholder="Importe Bruto">
+            <button id="calculateNet">Calcular</button>
+            <p id="netResult"></p>
+        </div>
+
+        <div class="section" id="calcularSueldo">
+            <h2>Calcular Sueldo con Aumento</h2>
+            <input type="number" id="yearsWorked" placeholder="Años Trabajados">
+            <button id="calculateSalary">Calcular</button>
+            <p id="salaryResult"></p>
+        </div>
+    </div>
+
+    <script src="./JS/scriptpage3.js"></script>
+</body>
+
+</html>
+

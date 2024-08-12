@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Votación por Sección</title>
+    <link rel="stylesheet" href="./CSS/stylepage2.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Votación por Sección de la Ciudad</h1>
+        <form id="voteForm">
+            <label for="section">¿De qué sección de la ciudad eres?</label>
+            <select id="section" name="section" required>
+                <option value="">Selecciona una opción</option>
+                <option value="norte">Norte</option>
+                <option value="sur">Sur</option>
+                <option value="centro">Centro</option>
+            </select>
+            <button type="submit">Enviar Voto</button>
+        </form>
+        <div id="result"></div>
+    </div>
+
+    <script src="./JS/scriptpage2.js"></script>
+</body>
+
+</html>
